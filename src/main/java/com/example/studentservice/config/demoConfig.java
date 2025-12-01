@@ -4,5 +4,9 @@ import org.springframework.beans.factory.annotation.Configurable;
 
 @Configurable
 public class demoConfig {
+	
+	public String hello() {
+		return "Hello ";
+	}
 
 }
