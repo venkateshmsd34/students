@@ -6,6 +6,9 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+/**
+ * 
+ */
 @Service
 public class StudentService {
 
@@ -27,7 +30,7 @@ public class StudentService {
     public List<Student> getAll() {
         return repository.findAll();
     }
-
+   
     public Student update(Long id, Student student) {
         Student existing = get(id);
         existing.setName(student.getName());
@@ -37,7 +40,9 @@ public class StudentService {
         return repository.save(existing);
     }
 
-    public void delete(Long id) {
+    public String delete(Long id) {
+    	
         repository.deleteById(id);
+        return "sucessfully student deleted";
     }
 }
