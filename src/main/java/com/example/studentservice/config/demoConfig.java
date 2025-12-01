@@ -7,7 +7,7 @@ public class demoConfig {
 	
 	public String hello() {
 
-		return "Hello world java spring boot  hjhjjhjh khkjkkjkj vc,asn fbCMx n mfdgfnSnzvc";
+		return "Hello world java spring boot  ";
 
 		
 }
