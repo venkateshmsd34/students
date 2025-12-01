@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Configurable;
 public class demoConfig {
 	
 	public String hello() {
-		return "Hello ";
+		return "Hello world ";
 	}
 
 }
