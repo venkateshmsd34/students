@@ -10,7 +10,7 @@ public class Student {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 
-	private String rollNumber;
+	private long rollNumber;
 	private String name;
 	private String email;
 	private String branch;
@@ -18,7 +18,7 @@ public class Student {
 	public Student() {
 	}
 
-	public Student(Long id, String rollNumber, String name, String email, String branch) {
+	public Student(Long id, long rollNumber, String name, String email, String branch) {
 		this.id = id;
 		this.rollNumber = rollNumber;
 		this.name = name;
@@ -35,11 +35,11 @@ public class Student {
 		this.id = id;
 	}
 
-	public String getRollNumber() {
+	public long getRollNumber() {
 		return rollNumber;
 	}
 
-	public void setRollNumber(String rollNumber) {
+	public void setRollNumber(long rollNumber) {
 		this.rollNumber = rollNumber;
 	}
 
