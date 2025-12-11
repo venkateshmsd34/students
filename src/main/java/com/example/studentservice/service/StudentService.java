@@ -24,7 +24,7 @@ public class StudentService {
 
     public Student get(Long id) {
         return repository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Student not found with ID " + id));
+                .orElseThrow(() -> new RuntimeException("Student not not there " + id));
     }
 
     public List<Student> getAll() {
